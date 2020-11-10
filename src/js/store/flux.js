@@ -1,7 +1,10 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
+			loggedin: false,
+			search: "",
 			favorites: [],
+			cart: [],
 			demo: [
 				{
 					title: "FIRST",
@@ -16,6 +19,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 			]
 		},
 		actions: {
+			login: event => {
+				setStore({ loggedin: event });
+			},
+
+			updateSearch: newValue => {
+				setStore({ search: newValue });
+			},
 			// Use getActions to call a function within a fuction
 			exampleFunction: () => {
 				getActions().changeColor(0, "green");
@@ -44,6 +54,18 @@ const getState = ({ getStore, getActions, setStore }) => {
 				let newFavorite = { name: name };
 
 				tempStore.favorites.push(newFavorite);
+				setStore({ tempStore });
+			},
+
+			deleteFromFavorites: e => {
+				let { favorites } = getStore();
+				setStore({ favorites: favorites.filter(favorite => favorite.name != e.name) });
+			},
+
+			// Cart//
+			addToCart: item => {
+				let tempStore = getStore();
+				tempStore.cart.push(item);
 				setStore({ tempStore });
 			},
 

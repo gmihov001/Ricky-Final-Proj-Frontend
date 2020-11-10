@@ -13,6 +13,12 @@ import { ContinentView } from "./views/continentView";
 import { ProductDetails } from "./views/productDetails";
 import { Register } from "./views/register";
 import { Login } from "./views/login";
+import { Cart } from "./views/cart";
+import { Account } from "./views/account";
+import { UserDetails } from "./views/userDetails";
+import { UserOrders } from "./views/userOrders";
+import { UserTransactions } from "./views/userTransactions";
+import { ReactCreditCards } from "./views/ReactCreditCards";
 
 //create your first component
 const Layout = () => {
@@ -26,11 +32,20 @@ const Layout = () => {
 				<ScrollToTop>
 					<Navbar />
 					<Switch>
+						<Route path="/reactcreditcards" component={ReactCreditCards} />
+						<Route path="/usertransaction" component={UserTransactions} />
+						<Route path="/userorders" component={UserOrders} />
+						<Route path="/userdetails" component={UserDetails} />
+						<Route path="/account" component={Account} />
 						<Route path="/details/:id" component={ProductDetails} />
 						<Route path="/register" component={Register} />
 						<Route path="/login" component={Login} />
+						<Route path="/cart" component={Cart} />
 						<Route path="/continent" component={ContinentView} />
 						<Route exact path="/">
+							<Home />
+						</Route>
+						<Route exact path="/home">
 							<Home />
 						</Route>
 						<Route exact path="/demo">

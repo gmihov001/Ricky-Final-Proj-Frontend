@@ -27,7 +27,11 @@ export const Product = props => {
 							Learn More!
 						</button>
 					</Link>
-
+					<button
+						className="nav-item btn btn-outline-warning"
+						onClick={() => actions.addToCart(props.product)}>
+						<i className="fas fa-shopping-cart" />
+					</button>
 					<button
 						type="button"
 						id="like"

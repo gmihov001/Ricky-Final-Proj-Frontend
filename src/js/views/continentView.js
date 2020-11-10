@@ -27,12 +27,15 @@ export class ContinentView extends React.Component {
 		console.log("Current Country length: ", this.state.currentCountry.length);
 
 		return (
-			<div className="text-center mt-5">
+			<div className="text-center ">
 				<h1>{this.props.location.state.continent}</h1>
 
 				<h3>
 					{countries.map((country, ind) => (
-						<button key={ind} onClick={() => this.setState({ currentCountry: country })}>
+						<button
+							className="mx-3 btn btn-outline-primary "
+							key={ind}
+							onClick={() => this.setState({ currentCountry: country })}>
 							{country}
 						</button>
 					))}

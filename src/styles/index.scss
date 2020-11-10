@@ -1,15 +1,30 @@
-
-// .show>.dropdown-menu {
-//      display: block; 
-//      position: absolute; 
-
-//      }
-
-// .dropdown-menu:hover{
-// background-color: yellow;
-
-// }
+#navbar{
+    // background-image: url("https://i.pinimg.com/originals/e8/1f/4a/e81f4adbeffe2d927e34e8f1fb882510.jpg");
+    // background-image: url("https://i.pinimg.com/originals/11/8e/95/118e950566483a03cdb816326b74eec7.jpg");
+}
+body{
+    // background-image: url("https://i.pinimg.com/originals/e8/1f/4a/e81f4adbeffe2d927e34e8f1fb882510.jpg");
+    // background-image: url("https://i.pinimg.com/originals/11/8e/95/118e950566483a03cdb816326b74eec7.jpg");
+}
 img{
     height: 250px;
     width: 250px;
+}
+
+.dropdown-menu {
+    border: 1px solid gray;
+}
+#input input{
+    width: 300px;
+}
+
+#icon{
+    height: 500px;
+    width: 500px;
+}
+#section div{
+    height: 200px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.678);
+    margin:10px;
 }

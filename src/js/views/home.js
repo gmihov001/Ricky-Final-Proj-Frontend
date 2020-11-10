@@ -6,6 +6,7 @@ import { Product } from "../component/product";
 import { Context } from "../store/appContext";
 
 export class Home extends React.Component {
+	static contextType = Context;
 	constructor(props) {
 		super(props);
 
@@ -14,7 +15,8 @@ export class Home extends React.Component {
 				{
 					name: "ANDETHIOURAYE",
 					price: "$15.99",
-					img: "https://yaramaafrica.com/wp-content/uploads/2017/07/andethiouraye.jpg",
+					img:
+						"https://www.madeinsenegal.app/wp-content/uploads/2020/08/Consommez-s%C3%A9n%C3%A9galais-images-91.png",
 					description: "Ceramic “Thiouraye” (Senegalese incense) burner",
 					continent: "AFRICA",
 					country: "Algeria"
@@ -41,8 +43,7 @@ export class Home extends React.Component {
 				{
 					name: "letter opener knife. rosewood wood",
 					price: "$15.99",
-					img:
-						"https://lh3.googleusercontent.com/proxy/3C3Q8jikQ1X7vnRH2DNMJqCqvpWo23wn7qtBuQzf_RSH3bisyL_TCqei149k7qVooVoPSLxyJKhUhLtDWL78F_HieKke4VNZuaqP3k6mUFclyzTg",
+					img: "https://i.etsystatic.com/15527997/r/il/d8812d/1584530881/il_570xN.1584530881_gca1.jpg",
 					description:
 						"Rosewood takes its name because of its reddish tones, although it is a richly toned wood, often brown with darker grains, but with many different hues.Rosewood wood is heavy, having an excellent polish, being suitable for making guitars, billiard cues and various crafts, as well as various household utensils.",
 					continent: "AFRICA",
@@ -146,26 +147,31 @@ export class Home extends React.Component {
 					country: "Adelaide"
 				},
 				{
-					name: "",
+					name: "Australian Opal",
 					price: "$",
-					img: "",
-					description: "",
-					continent: "",
-					country: ""
+					img:
+						"https://www.juwelo.fr/amg/9ac076892362c28eb14322edf79e54d4/800/media/catalog/product/source/eq/gemme-et-opale-boulder;3095eq.jpg",
+					description:
+						"The first discovery of common opals in Australia was made near Angaston (SA) by the German geologist Johannes Menge in 1849. Both the Queensland Boulder Opal and Lightning Ridge fields attracted miners in the 1880's. ... He made doublets, jewellery, and was one of the first to buy opal by the carat.",
+					continent: "AUSTRALIA",
+					country: "Tasmania"
 				},
 				{
-					name: "",
-					price: "$",
-					img: "",
-					description: "",
-					continent: "",
-					country: ""
+					name: "Nephrite Ax",
+					price: "$250.00",
+					img: "https://assets.catawiki.nl/assets/2019/5/7/a/1/5/a159b887-6154-4876-8bcf-8d09bfec69a3.jpg",
+					description:
+						"Exceptional big old bride Celt green stone Jade/Nephrite axe, Sentani Papua New Guinea. This old axe is fitted on a bronze custom base. The condition is excellent for its age. Ex collection Jan Van Den Abbeel, Gent (artist/painter) acquired in Amsterdam '65.",
+					continent: "AUSTRALIA",
+					country: "Popua New Guinea"
 				},
 				{
-					name: "Laptop",
-					price: "20",
-					img: "https://i.pinimg.com/736x/3d/59/b9/3d59b9484b55bfd1b4a0b7100350e80a.jpg",
-					description: "",
+					name: "Canada Gold Coin",
+					price: "$2,000.00",
+					img:
+						"https://img2.freepng.es/20180519/eat/kisspng-bullion-coin-canadian-gold-maple-leaf-gold-coin-5b0009eb449991.981776951526729195281.jpg",
+					description:
+						"The Royal Canadian Mint introduced the 1-ounce coin in 1979. ... This coin made history as the first bullion coin to be struck from 99.99% pure gold. Not to be outdone, the Mint raised the coin's gold standard to 99.999% in 2007. Today, the Canadian Gold Maple Leaf Coin remains highly regarded for its purity and quality.",
 					continent: "NORTH AMERICA",
 					country: "Canada"
 				},
@@ -231,8 +237,9 @@ export class Home extends React.Component {
 	}
 
 	render() {
+		const search = this.context.store.search;
 		return (
-			<div className="text-center mt-5">
+			<div className="text-center  m-0">
 				<div>
 					<Link
 						to={{
@@ -296,9 +303,17 @@ export class Home extends React.Component {
 					</Link>
 				</div>
 
-				{this.state.products.map((product, index) => (
-					<Product key={index} product={product} />
-				))}
+				{this.state.products.map((product, index) => {
+					if (
+						(search != "" &&
+							(product.name.toLowerCase().includes(search.toLowerCase()) ||
+								product.continent.toLowerCase().includes(search.toLowerCase()) ||
+								product.country.toLowerCase().includes(search.toLowerCase()))) ||
+						search == ""
+					) {
+						return <Product key={index} product={product} />;
+					}
+				})}
 			</div>
 		);
 	}

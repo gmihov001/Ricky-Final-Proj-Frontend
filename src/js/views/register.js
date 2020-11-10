@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 export class Register extends React.Component {
 	constructor(props) {
 		super(props);
@@ -14,12 +15,6 @@ export class Register extends React.Component {
 					</div>
 
 					<div className="card-body">
-						<div id="caja">
-							<div id="textcolor" className="d-flex justify-content-Start p-3 ml-3">
-								<h4> Some fields are missing</h4>
-							</div>
-						</div>
-
 						<form>
 							<div className="form-row">
 								<div className="form-group col-md-5 text-left">
@@ -67,12 +62,9 @@ export class Register extends React.Component {
 							</div>
 						</form>
 					</div>
-					<div className="card-footer text-muted d-flex justify-content-end">
-						<a href="#" className="btn btn-secondary mr-1">
-							Cancel
-						</a>
+					<div className="card-footer text-muted d-flex justify-content-center">
 						<a href="#" className="btn btn-primary">
-							Sent
+							Sign Up
 						</a>
 					</div>
 				</div>
