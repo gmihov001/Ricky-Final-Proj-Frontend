@@ -14,7 +14,7 @@ export class Home extends React.Component {
 			products: [
 				{
 					name: "ANDETHIOURAYE",
-					price: "$15.99",
+					price: 15.99,
 					img:
 						"https://www.madeinsenegal.app/wp-content/uploads/2020/08/Consommez-s%C3%A9n%C3%A9galais-images-91.png",
 					description: "Ceramic “Thiouraye” (Senegalese incense) burner",
@@ -23,7 +23,7 @@ export class Home extends React.Component {
 				},
 				{
 					name: "ETHNIC TUAREG BRACELET",
-					price: "$49.99",
+					price: 49.99,
 					img:
 						"https://yaramaafrica.com/wp-content/uploads/2016/04/5178ab_2dae7ee819ee4a6fa250e77214fd5864.jpg",
 					description:
@@ -33,7 +33,7 @@ export class Home extends React.Component {
 				},
 				{
 					name: "Coconut kalimba. instrument",
-					price: "$25.99",
+					price: 25.99,
 					img: "https://images-na.ssl-images-amazon.com/images/I/51A82KJzUxL._AC_SX466_.jpg",
 					description:
 						"The calimba is an African percussion instrument, which is spread throughout the continent, being the modern version of the traditional .It can be made of different materials, as well as having an indeterminate number of shades, which can range from 6 to 17.The thumbs of both hands are used to sound the calimba.",
@@ -42,7 +42,7 @@ export class Home extends React.Component {
 				},
 				{
 					name: "letter opener knife. rosewood wood",
-					price: "$15.99",
+					price: 15.99,
 					img: "https://i.etsystatic.com/15527997/r/il/d8812d/1584530881/il_570xN.1584530881_gca1.jpg",
 					description:
 						"Rosewood takes its name because of its reddish tones, although it is a richly toned wood, often brown with darker grains, but with many different hues.Rosewood wood is heavy, having an excellent polish, being suitable for making guitars, billiard cues and various crafts, as well as various household utensils.",
@@ -52,7 +52,7 @@ export class Home extends React.Component {
 
 				{
 					name: "Drawn Peral Fan",
-					price: "$65.99",
+					price: 65.99,
 					img: "https://artesamart.com/modules/ptssliderlayer/images/abanico1-sombra-giro-m.png",
 					description:
 						"Handmade fan, openwork rods made of pear wood. Cotton country. Hand painted, decorated on both sides with floral motifs and borders in various shades; representing the most classic and traditional style of the Spanish fan",
@@ -61,7 +61,7 @@ export class Home extends React.Component {
 				},
 				{
 					name: "Aran Jersey",
-					price: "$89.99",
+					price: 89.99,
 					img:
 						"https://3.bp.blogspot.com/-zrlJs7zSjrQ/WgOIGOhRyhI/AAAAAAAAET0/f8JPoXu0p5cy9fniW6WT7VrGCSQDjDlrQCLcBGAs/s1600/modnie_svitera_aranskoe_pletenie.jpg",
 					description:
@@ -71,7 +71,7 @@ export class Home extends React.Component {
 				},
 				{
 					name: "Péckvillercher",
-					price: "$35.99",
+					price: 35.99,
 					img: "https://clewlux.files.wordpress.com/2015/03/luxembourg.jpg?w=584",
 					description:
 						"The Péckvillercher is a small terracotta bird that sounds like the cuckoo’s sound when blowing in it. Every year, new colorful terracotta or ceramic small birds are sold during the festival. Simply curious or collector, come and admire them You can find there colorful Péckvillercher with one or some holes. They are sold at different prices. Usually, children love creating beautiful melodies with these pretty small birds.",
@@ -81,7 +81,7 @@ export class Home extends React.Component {
 
 				{
 					name: "Feta Cheesse",
-					price: "$12.99",
+					price: 12.99,
 					img: "https://demedbook.com/images/1/is-cheese-safe-for-people-with-diabetes_2.jpg",
 					description:
 						"Though cheese made from sheep's or goat's milk is documented in Greece from the 8th century BC, and was widely consumed in ancient Greece and in later Greek gastronomy, feta cheese in particular is first recorded in the Byzantine period under the name prósphatos",
@@ -91,7 +91,7 @@ export class Home extends React.Component {
 
 				{
 					name: "Dreamcatchers",
-					price: "$20.99",
+					price: 20.99,
 					img:
 						"https://panamericana.vteximg.com.br/arquivos/ids/348182-600-690/atrapasuenos-contrachapado-con-plumas-y-flores-54-cm-7701016738668.jpg?v=637182310405000000",
 					description:
@@ -101,7 +101,7 @@ export class Home extends React.Component {
 				},
 				{
 					name: "Happiness Bottle",
-					price: "$22.99",
+					price: 22.99,
 					img: "https://www.arasia-shop.com/4616-large_default/botella-felicidad.jpg",
 					description:
 						"This beautiful bottle filled with Himalayan herbs is very popular in Thailand for its many benefits: it is refreshing and anti-fatigue, clears the nose, and relieves headaches and vertigo. It has a stimulating and relaxing effect at the same time.",
@@ -110,7 +110,7 @@ export class Home extends React.Component {
 				},
 				{
 					name: "QI GONG BALLS",
-					price: "$19.99",
+					price: 19.99,
 					img: "https://cdn.pixabay.com/photo/2014/02/23/12/56/qi-gong-272872_960_720.jpg",
 					description:
 						"The first Baoding balls were likely created in Hebei, China, during the Ming dynasty. Formerly, they were often called iron balls, as they were originally made of iron. Meditation balls continue to be produced there.",
@@ -119,7 +119,7 @@ export class Home extends React.Component {
 				},
 				{
 					name: "Ganesh Notebook",
-					price: "$22.00",
+					price: 22.0,
 					img: "https://www.arasia-shop.com/4760/cuaderno-ganesh.jpg",
 					description:
 						"These beautiful notebooks are handmade in India from recycled leather and paper. Ganesh's decoration is metal. Can be used as a travel diary, guest book, journal, to record dreams.",
@@ -128,7 +128,7 @@ export class Home extends React.Component {
 				},
 				{
 					name: "idgeridoo",
-					price: "$70.00",
+					price: 70.0,
 					img:
 						"https://cdn.shopify.com/s/files/1/0141/6737/5930/products/didgeridoo-bamboo-with-painted-artwork_300x300.jpg?v=1575431289",
 					description:
@@ -138,7 +138,7 @@ export class Home extends React.Component {
 				},
 				{
 					name: "Boomerang",
-					price: "$9.99",
+					price: 9.99,
 					img:
 						"https://civilianmilitaryintelligencegroup.com/wp-content/uploads/2017/04/2AB09C1400000578-0-image-m-4_1437476267874.jpg",
 					description:
@@ -158,7 +158,7 @@ export class Home extends React.Component {
 				},
 				{
 					name: "Nephrite Ax",
-					price: "$250.00",
+					price: 250.0,
 					img: "https://assets.catawiki.nl/assets/2019/5/7/a/1/5/a159b887-6154-4876-8bcf-8d09bfec69a3.jpg",
 					description:
 						"Exceptional big old bride Celt green stone Jade/Nephrite axe, Sentani Papua New Guinea. This old axe is fitted on a bronze custom base. The condition is excellent for its age. Ex collection Jan Van Den Abbeel, Gent (artist/painter) acquired in Amsterdam '65.",
@@ -167,7 +167,7 @@ export class Home extends React.Component {
 				},
 				{
 					name: "Canada Gold Coin",
-					price: "$2,000.00",
+					price: 2000.0,
 					img:
 						"https://img2.freepng.es/20180519/eat/kisspng-bullion-coin-canadian-gold-maple-leaf-gold-coin-5b0009eb449991.981776951526729195281.jpg",
 					description:

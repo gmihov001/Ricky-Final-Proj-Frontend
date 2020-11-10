@@ -33,7 +33,7 @@ export const Navbar = props => {
 					value={search}
 				/>
 				<button
-					className="btn btn-outline-success my-2 my-sm-0"
+					className="btn btn-outline-success my-2 my-sm-0 "
 					onClick={e => {
 						if (search.length > 0) {
 							actions.updateSearch(search);
@@ -113,6 +113,7 @@ export const Navbar = props => {
 								<span className="badge badge-danger">{store.favorites.length}</span>
 							</button>
 							<div
+								id="dropdowm"
 								className={
 									store.favorites.length > 0
 										? "dropdown-menu " + (clickedFavorites ? "show" : "")

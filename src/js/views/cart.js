@@ -1,6 +1,6 @@
 import React from "react";
 import { Context } from "../store/appContext";
-import { CartItem } from "../component/cartItems";
+import { CartItem } from "../component/cartItem";
 
 export class Cart extends React.Component {
 	constructor(props) {
@@ -12,15 +12,20 @@ export class Cart extends React.Component {
 		return (
 			<Context.Consumer>
 				{({ actions, store }) => (
-					<div className="container-fluid p-4">
+					<div className="container mx-auto p-4">
 						<div className=" d-flex justify-content-Start font-weight-bold">
-							<h1>SHOPPING BAG</h1>
+							<h1>Your Cart</h1>
 						</div>
-						{/* <div>
-							{store.cart.map((cartItem, ind) => (
-								<CartItem key={ind} item={cartItem} />
-							))}
-						</div> */}
+						<div className="d-flex  justify-content-start">
+							<div>
+								{store.cart.map((cartItem, ind) => (
+									<CartItem key={ind} index={ind} item={cartItem} />
+								))}
+							</div>
+							<div className="d-flex  justify-content-end">
+								<h3>Sub Total: {actions.getTotal()}</h3>
+							</div>
+						</div>
 					</div>
 				)}
 			</Context.Consumer>

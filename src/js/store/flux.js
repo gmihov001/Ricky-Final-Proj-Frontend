@@ -19,6 +19,19 @@ const getState = ({ getStore, getActions, setStore }) => {
 			]
 		},
 		actions: {
+			deleteFromCart: e => {
+				let { cart } = getStore();
+				setStore({ cart: cart.filter((item, ind) => ind != e) });
+			},
+			getTotal: () => {
+				let { cart } = getStore();
+				var total = 0;
+				for (let x of cart) {
+					total += x.price;
+				}
+				return total;
+			},
+
 			login: event => {
 				setStore({ loggedin: event });
 			},

@@ -6,6 +6,7 @@ import { Context } from "../store/appContext";
 export const Product = props => {
 	const { store, actions } = useContext(Context);
 	const found = store.favorites.find(element => element.name == props.product.name);
+	const foundCart = store.cart.find(element => element.name == props.product.name);
 	return (
 		<div className="d-inline-flex pr-5 ">
 			{/* post */}
@@ -29,7 +30,7 @@ export const Product = props => {
 					</Link>
 					<button
 						className="nav-item btn btn-outline-warning"
-						onClick={() => actions.addToCart(props.product)}>
+						onClick={foundCart ? null : () => actions.addToCart(props.product)}>
 						<i className="fas fa-shopping-cart" />
 					</button>
 					<button
