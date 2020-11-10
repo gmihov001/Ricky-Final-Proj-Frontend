@@ -22,9 +22,11 @@ export class Cart extends React.Component {
 									<CartItem key={ind} index={ind} item={cartItem} />
 								))}
 							</div>
-							<div className="d-flex  justify-content-end">
-								<h3>Sub Total: {actions.getTotal()}</h3>
-								<button className="btn btn-lg btn-success" />
+							<div className="d-block">
+								<h3>Sub Total: {actions.getTotal().toFixed(2)}</h3>
+								<button className="btn btn-lg btn-success">
+									<h3>Payment</h3>
+								</button>
 							</div>
 						</div>
 					</div>
