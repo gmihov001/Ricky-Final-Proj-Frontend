@@ -24,6 +24,7 @@ export class Cart extends React.Component {
 							</div>
 							<div className="d-flex  justify-content-end">
 								<h3>Sub Total: {actions.getTotal()}</h3>
+								<button className="btn btn-lg btn-success" />
 							</div>
 						</div>
 					</div>
