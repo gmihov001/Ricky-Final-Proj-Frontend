@@ -1,6 +1,7 @@
 import React from "react";
 import { Context } from "../store/appContext";
 import { CartItem } from "../component/cartItem";
+import { StripeCheckoutButton } from "../component/stripe-button";
 
 export class Cart extends React.Component {
 	constructor(props) {
@@ -27,6 +28,7 @@ export class Cart extends React.Component {
 								<button className="btn btn-lg btn-success">
 									<h3>Payment</h3>
 								</button>
+								<StripeCheckoutButton price={actions.getTotal()} />
 							</div>
 						</div>
 					</div>
