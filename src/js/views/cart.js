@@ -24,11 +24,11 @@ export class Cart extends React.Component {
 								))}
 							</div>
 							<div className="d-block">
-								<h3>Sub Total: {actions.getTotal().toFixed(2)}</h3>
+								<h3>Sub Total: {Math.round(actions.getTotal() * 100) / 100}</h3>
 								<button className="btn btn-lg btn-success">
 									<h3>Payment</h3>
 								</button>
-								<StripeCheckoutButton price={actions.getTotal()} />
+								<StripeCheckoutButton price={Math.round(actions.getTotal() * 100) / 100} />
 							</div>
 						</div>
 					</div>

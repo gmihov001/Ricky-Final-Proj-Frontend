@@ -14,9 +14,9 @@ export const Navbar = props => {
 	return (
 		<nav id="navbar" className="navbar navbar-expand-lg navbar-light  d-flex   ">
 			<Link to="/home">
-				<a className="navbar-brand" href="">
+				<span className="navbar-brand">
 					<i className="fab fa-aviato fa-7x" />
-				</a>
+				</span>
 			</Link>
 			<form className="form-inline my-2 my-lg-0">
 				<input

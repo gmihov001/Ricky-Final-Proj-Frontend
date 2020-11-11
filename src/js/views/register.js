@@ -63,9 +63,9 @@ export class Register extends React.Component {
 						</form>
 					</div>
 					<div className="card-footer text-muted d-flex justify-content-center">
-						<a href="#" className="btn btn-primary">
+						<button href="#" className="btn btn-primary">
 							Sign Up
-						</a>
+						</button>
 					</div>
 				</div>
 			</div>
