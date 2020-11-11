@@ -4,19 +4,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			loggedin: false,
 			search: "",
 			favorites: [],
-			cart: [],
-			demo: [
-				{
-					title: "FIRST",
-					background: "white",
-					initial: "white"
-				},
-				{
-					title: "SECOND",
-					background: "white",
-					initial: "white"
-				}
-			]
+			cart: []
 		},
 		actions: {
 			deleteFromCart: e => {
