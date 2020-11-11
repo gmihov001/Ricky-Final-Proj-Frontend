@@ -11,6 +11,7 @@ export const StripeCheckoutButton = ({ price }) => {
 
 	const onToken = token => {
 		console.log(token);
+		actions.resetCart();
 		alert("Payment Successful");
 	};
 	return (

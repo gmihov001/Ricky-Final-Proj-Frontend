@@ -11,6 +11,9 @@ const getState = ({ getStore, getActions, setStore }) => {
 				let { cart } = getStore();
 				setStore({ cart: cart.filter((item, ind) => ind != e) });
 			},
+			resetCart: () => {
+				setStore({ cart: [] });
+			},
 			getTotal: () => {
 				let { cart } = getStore();
 				var total = 0;
